@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f2b48 0%, #08121e 100%);
+  color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 620px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-principal {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.descricao {
+  font-size: 1.05rem;
+  color: #9ca3af;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  max-width: 520px;
+}
+
+.botoes-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.btn-segue {
+  background-color: #d1e231;
+  color: #0d1b2a;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border-radius: 99px;
+  box-shadow: 0 4px 14px rgba(209, 226, 49, 0.25);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-segue:hover {
+  background-color: #e2f145;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(209, 226, 49, 0.4);
+}
+
+.btn-secundario {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #3b82f6;
+  box-shadow: none;
+}
+
+.btn-secundario:hover {
+  background-color: rgba(59, 130, 246, 0.15);
+  border-color: #60a5fa;
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.2);
+}
+
+.foto-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.foto-link {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #3b82f6, #d1e231);
+  transition: transform 0.3s ease;
+}
+
+.foto-link:hover {
+  transform: scale(1.06);
+}
+
+.inst {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid #0b1d2d;
+}
+
+.secao {
+  width: 100%;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 24px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.secao h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #f3f4f6;
+}
+
+.lista-interesses {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.lista-interesses li {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.texto-biografia {
+  font-size: 0.98rem;
+  color: #9ca3af;
+  line-height: 1.6;
+}
